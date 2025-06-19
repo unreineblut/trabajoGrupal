@@ -1,23 +1,20 @@
-print("Bienvenido a la plataforma de registro de contactos.")
-#Menú principal y opciones.
-opcion = 0
-while opcion != 5:
-    print("1.- Agregar contacto.\n2.- Listar contactos.\
-        \n 3.- Buscar un contacto por nombre.\n 4.- Eliminar un contacto. \n\
-            5.- Salir del programa")
-    try:
-        opcion = int(input("Selecciona una opción para continuar"))
-    except:
-        print("Las opciones son numéricas.")
-    if opcion == 1:
-        pass
-    elif opcion == 2:
-        pass
-    elif opcion == 3:
-        pass
-    elif opcion == 4:
-        pass
-    elif opcion == 5:
-        print("Gracias por utilizar el programa!")
+rama-jim
+contactos = []
+telefonos = []
+emails = []
+def agregar_contacto ():
+    
+    nombre = input("Ingrese nombre:")
+    contactos.append(nombre)
+    telefono = input("Ingrese telefono:")
+    telefonos.append(telefono)
+    email = input("Ingrese mail:")
+    emails.append(email)
+    print(f"El contacto a sido registrado.\n{nombre, telefono, email}")
+
+def mostrar_contacto ():
+    if len(contactos) == 0:
+        print("No hay contactos registrados.")
     else:
-        print("Debes elegir una opción válida")
+        for i in range(len(contactos)):
+            print(f"{i+1}. {contactos[i]} - Tel: {telefonos[i]} - Email: {emails[i]}")
