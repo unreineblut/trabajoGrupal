@@ -13,7 +13,8 @@ def buscar_contacto():
             for i in range(len(encontrados)):
                 print (f"{i+1}. {contactos[i]} - Tel: {telefonos[i]} - Email: {emails[i]}")
 
-def eliminar_contacto(nombre_buscado):
+def eliminar_contacto():
+    nombre_buscado = input("Ingresa el nombre del contacto a eliminar.")
     if nombre_buscado in contactos:
         indice = contactos.index(nombre_buscado)
         del contactos[indice]
