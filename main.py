@@ -23,9 +23,9 @@ while opcion != 5:
     elif opcion == 2:
         mostrar_contacto()
     elif opcion == 3:
-        pass
+        buscar_contacto()
     elif opcion == 4:
-        pass
+        eliminar_contacto()
     elif opcion == 5:
         print("Gracias por utilizar el programa!")
     else:
